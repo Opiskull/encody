@@ -11,11 +11,11 @@ const encodeMap = {
   ß: "\\u00df",
 };
 
-const replaceValues = (value) => {
-  return Object.entries(encodeMap).reduce((prev, [k, v]) => {
-    return prev.replaceAll(k, v);
-  }, value);
-};
+const replaceValues = (value) =>
+  Object.entries(encodeMap).reduce(
+    (prev, [k, v]) => prev.replaceAll(k, v),
+    value
+  );
 
 function App() {
   const [value, setValue] = useState("");
