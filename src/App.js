@@ -10,14 +10,11 @@ const encodeMap = {
   ü: "\\u00fc",
   ß: "\\u00df",
 };
-const encodeKeys = Object.keys(encodeMap);
 
 const replaceValues = (value) => {
-  let encodedValue = value;
-  encodeKeys.forEach((k) => {
-    encodedValue = encodedValue.replaceAll(k, encodeMap[k]);
-  });
-  return encodedValue;
+  return Object.entries(encodeMap).reduce((prev, [k, v]) => {
+    return prev.replaceAll(k, v);
+  }, value);
 };
 
 function App() {
