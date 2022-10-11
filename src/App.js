@@ -2,13 +2,13 @@ import "./App.css";
 import { useState } from "react";
 
 const encodeMap = {
-  Ä: "\\u00c4",
-  ä: "\\u00e4",
-  Ö: "\\u00d6",
-  ö: "\\u00f6",
-  Ü: "\\u00dc",
-  ü: "\\u00fc",
-  ß: "\\u00df",
+  Ä: "\\u00C4",
+  ä: "\\u00E4",
+  Ö: "\\u00D6",
+  ö: "\\u00F6",
+  Ü: "\\u00DC",
+  ü: "\\u00FC",
+  ß: "\\u00DF",
 };
 
 const replaceValues = (value) =>
