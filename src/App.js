@@ -9,7 +9,7 @@ const encodeMap = {
   Ü: "\\u00DC",
   ü: "\\u00FC",
   ß: "\\u00DF",
-  °: "\\u00B0",
+  "°": "\\u00B0",
 };
 
 const replaceValues = (value) =>
